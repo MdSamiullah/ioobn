@@ -1,0 +1,1 @@
+async function e(e,t,n,r={}){let i=Object.assign(document.createElement(`a`),{href:URL.createObjectURL(new Blob([t],{type:n})),download:e});return i.click(),URL.revokeObjectURL(i.href),{ok:!0,savedAs:e}}export{e as saveFile};
